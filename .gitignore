@@ -1,0 +1,17 @@
+# Gowin EDA generated files
+impl/
+*.fs
+*.bin
+*.log
+*.rpt
+*.vr
+*.vm
+*.vo
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
