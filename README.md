@@ -48,35 +48,10 @@ real-time CPU state streaming to a Python decoder over USB.
 
 ---
 
+
 ## Architecture
-┌─────────────────────────────────────────┐
-      │              cpu_fpga.v (Top)            │
-      │  ┌──────────────────────────────────┐   │
-      │  │           cpu.v                  │   │
-      │  │  ┌──────┐  ┌──────┐  ┌───────┐  │   │
-      │  │  │  PC  │  │ CU   │  │  IM   │  │   │
-      │  │  └──────┘  └──────┘  └───────┘  │   │
-      │  │         ┌──────────┐             │   │
-      │  │         │ Datapath │             │   │
-      │  │         │ ALU+RegF │             │   │
-      │  │         └──────────┘             │   │
-      │  └──────────────┬───────────────────┘   │
-      │                 │ telemetry bus          │
-      │  ┌──────────────▼───────────────────┐   │
-      │  │       uart_sequencer.v            │   │
-      │  │  ┌────────────────────────────┐  │   │
-      │  │  │       uart_tx.v            │  │   │
-      │  │  └────────────────────────────┘  │   │
-      │  └──────────────────────────────────┘   │
-      └──────────────────────┬──────────────────┘
-                             │ PIN69 (TX)
-                        BL616 USB Bridge
-                             │
-                        USB → PC
-                             │
-                      cpu_fpga.py
-                      
-                      ---
+
+![System Architecture](docs/images/architecture_diagram.png)
 
 ## UART Telemetry Protocol
 
