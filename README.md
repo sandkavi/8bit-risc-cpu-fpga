@@ -11,7 +11,7 @@ real-time CPU state streaming to a Python decoder over USB.
 
 ## Demo
 
-[▶ Watch the live demo](demo.mp4)
+https://github.com/sandkavi/8bit-risc-cpu-fpga/blob/main/demo.mp4
 
 ---
 
