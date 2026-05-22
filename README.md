@@ -104,6 +104,8 @@ Each instruction triggers an 11-byte packet over UART at 115200 baud:
 
 ## Verified Execution Trace (Live Hardware)
 
+![Tang Nano 20K Running 8-bit RISC CPU](docs/images/board_hardware.jpeg)
+
 ---
 
 ## How to Run
